@@ -12,4 +12,8 @@ services:
       KAFKA_CREATE_TOPICS: "${TOPIC}:1:1"
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
     volumes:
+      - kafka_data:/kafka/data
       - /var/run/docker.sock:/var/run/docker.sock
+volumes:
+  kafka_data:
+    driver: local
