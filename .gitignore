@@ -1,2 +1,4 @@
 .env
+jmx/
 .infisical.json
+docker-compose.yml.old
